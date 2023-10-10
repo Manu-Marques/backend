@@ -33,6 +33,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client/public')));
 
+app.get('/', (req, res) => {
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.sendFile("Api is running")
+});
+
+
 
 app.get('/planetes', (req, res) => {
   res.json(planetes);
