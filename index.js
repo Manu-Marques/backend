@@ -1,10 +1,10 @@
- import planetes from './data/planetes.json' assert { type: 'json' };
- import lunes from './data/lunes.json' assert { type: 'json' };
 // import cors from 'cors';
 // import bodyParser from 'body-parser';
 import express from 'express';
 // import { fileURLToPath } from 'url';
-// import path from 'path';
+import path from 'path';
+import planetes from './data/planetes.json' assert { type: 'json' };
+import lunes from './data/lunes.json' assert { type: 'json' };
 // import bcrypt from 'bcrypt';
 // import jwt from 'jsonwebtoken';
 // import Joi from 'joi';
