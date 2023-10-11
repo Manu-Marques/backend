@@ -1,5 +1,5 @@
-// import planetes from './data/planetes.json' assert { type: 'json' };
-// import lunes from './data/lunes.json' assert { type: 'json' };
+ import planetes from './data/planetes.json' assert { type: 'json' };
+ import lunes from './data/lunes.json' assert { type: 'json' };
 // import cors from 'cors';
 // import bodyParser from 'body-parser';
 import express from 'express';
@@ -41,13 +41,13 @@ app.get('/', (req, res) => {
 
 
 
-// app.get('/planetes', (req, res) => {
-//   res.json(planetes);
-// });
+ app.get('/planetes', (req, res) => {
+   res.json(planetes);
+ });
 
-// app.get('/lunes', (req, res) => {
-//   res.json(lunes);
-// });
+ app.get('/lunes', (req, res) => {
+   res.json(lunes);
+ });
 
 
 // //Login
